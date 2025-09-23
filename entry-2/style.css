@@ -22,3 +22,13 @@ body {
   background-color: #f1f1f1; /* light grey */
 }
 
+a {
+  font-family: sans-serif;   
+  color: black;             
+  text-decoration: underline;     
+}
+
+a:hover {
+  color: red;               
+  text-decoration: underline; 
+}
