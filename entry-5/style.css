@@ -1,34 +1,116 @@
+@font-face {
+  font-family: 'HostGrotesk Regular';
+  src: url('HostGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HostGrotesk Bold';
+  src: url('HostGrotesk-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  text-align: center;
+  font-family: ;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
 h1 {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.25;
-}
-p {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.25;
-}
-h2 {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.25;
-}
-h3 {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.25;
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
 }
 body {
-  background-color: #f1f1f1; /* light grey */
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
 }
 
-a {
-  font-family: sans-serif;   
-  color: black;             
-  text-decoration: underline;     
+p {
+  margin-bottom: 60px;
+  font-size: 1.2em;
+  color: #000000;
 }
 
-a:hover {
-  color: red;               
-  text-decoration: underline; 
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; /* Remove gap, we'll use margins instead */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-container a {
+  margin-bottom: 40px; /* Consistent spacing */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  line-height: 0; /* Remove extra line height */
+}
+
+.grid-container a:hover {
+  transform: scale(1.4);
+  opacity: 0.9;
+}
+
+.grid-container img {
+  display: block;
+  vertical-align: top; /* Remove baseline gap */
+}
+
+/* Custom width for each font image */
+.grid-container a:nth-child(1) img { 
+  width: 700px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(2) img { 
+  width: 500px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(3) img { 
+  width: 400px; 
+  height: auto;
+  margin-bottom: -50px; 
+}
+
+.grid-container a:nth-child(4) img { 
+  width: 500px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(5) img { 
+  width: 550px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.grid-container a:nth-child(6) img { 
+  width: 620px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.grid-container a:nth-child(7) img { 
+  width: 580px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(8) img { 
+  width: 640px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(9) img { 
+  width: 500px; 
+  height: auto;
+}
+
+.grid-container a:nth-child(10) img { 
+  width: 500px; 
+  height: auto;
 }
