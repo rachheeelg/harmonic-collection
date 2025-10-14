@@ -17,7 +17,7 @@ body {
   text-align: center;
   font-family: ;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 h1 {
@@ -39,16 +39,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0; /* Remove gap, we'll use margins instead */
+  gap: 0; 
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .grid-container a {
-  margin-bottom: 40px; /* Consistent spacing */
+  margin-bottom: 40px; 
   transition: transform 0.3s ease, opacity 0.3s ease;
-  line-height: 0; /* Remove extra line height */
+  line-height: 0; 
 }
 
 .grid-container a:hover {
@@ -58,10 +58,10 @@ p {
 
 .grid-container img {
   display: block;
-  vertical-align: top; /* Remove baseline gap */
+  vertical-align: top; 
 }
 
-/* Custom width for each font image */
+
 .grid-container a:nth-child(1) img { 
   width: 700px; 
   height: auto;
