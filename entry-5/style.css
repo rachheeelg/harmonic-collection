@@ -17,22 +17,23 @@ body {
   text-align: center;
   font-family: ;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #FFF8E3;
 }
 
 h1 {
   font-family: 'HostGrotesk Bold', Arial, sans-serif;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bold;
 }
 body {
   font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  color: #FB68BC;
 }
 
 p {
   margin-bottom: 60px;
   font-size: 1.2em;
-  color: #000000;
+  color: #FB68BC;
 }
 
 .grid-container {
@@ -47,13 +48,14 @@ p {
 
 .grid-container a {
   margin-bottom: 40px; 
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
   line-height: 0; 
 }
 
 .grid-container a:hover {
   transform: scale(1.4);
   opacity: 0.9;
+  filter: grayscale(100%);
 }
 
 .grid-container img {
@@ -73,9 +75,9 @@ p {
 }
 
 .grid-container a:nth-child(3) img { 
-  width: 400px; 
+  width: 300px; 
   height: auto;
-  margin-bottom: -50px; 
+  margin-bottom: 20px; 
 }
 
 .grid-container a:nth-child(4) img { 
