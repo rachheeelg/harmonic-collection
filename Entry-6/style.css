@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'HostGrotesk Regular';
+  src: url('HostGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HostGrotesk Bold';
+  src: url('HostGrotesk-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  font-family: ;
+  padding: 20px;
+  background-color: #FFF8E3;
+}
+h1 {
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+}
+body {
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  color: #FB68BC;
+}
