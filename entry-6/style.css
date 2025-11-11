@@ -12,12 +12,12 @@
   font-style: normal;
 }
 
-
 body {
   text-align: center;
-  font-family: ;
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
   padding: 20px;
   background-color: #FFF8E3;
+  color: #1070bf;
 }
 
 h1 {
@@ -25,15 +25,11 @@ h1 {
   font-size: 5em;
   font-weight: bold;
 }
-body {
-  font-family: 'HostGrotesk Regular', Arial, sans-serif;
-  color: #FB68BC;
-}
 
 p {
   margin-bottom: 60px;
   font-size: 1.2em;
-  color: #FB68BC;
+  color: #1070bf;
 }
 
 .grid-container {
@@ -55,14 +51,21 @@ p {
 .grid-container a:hover {
   transform: scale(1.4);
   opacity: 0.9;
-  filter: grayscale(100%);
+}
+
+/* Invert filter only for items 1-5 */
+.grid-container a:nth-child(1):hover,
+.grid-container a:nth-child(2):hover,
+.grid-container a:nth-child(3):hover,
+.grid-container a:nth-child(4):hover,
+.grid-container a:nth-child(5):hover {
+  filter: invert(100%);
 }
 
 .grid-container img {
   display: block;
   vertical-align: top; 
 }
-
 
 .grid-container a:nth-child(1) img { 
   width: 700px; 
