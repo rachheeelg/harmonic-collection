@@ -1,9 +1,14 @@
 .circle {
     width: 800px;
     height: 800px;
+    display: flex;
     background-color: blue;
     border-radius: 50%;
-    align-items: center;
+    circle-hover: pointer;
+}
+
+.circle:hover{ 
+  transform: scale: (1.1)); 
 }
 
 body {
@@ -11,5 +16,9 @@ body {
   font-family: 'HostGrotesk Regular', Arial, sans-serif;
   padding: 20px;
   background-color: #FFF8E3;
-  color: #1070bf;
+  color: green;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
