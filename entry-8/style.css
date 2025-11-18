@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'HostGrotesk Regular';
+  src: url('HostGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HostGrotesk Bold';
+  src: url('HostGrotesk-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #FFF8E3;
+  color: #1070bf;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1070bf;
+  color: #FFF8E3;
+}
+
+h1 {
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.light-mode h1 {
+  color: #1070bf;
+}
+
+body.dark-mode h1 {
+  color: #FFF8E3;
+}
+
+h2 {
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+h3 {
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+body.light-mode h2 {
+  color: #1070bf;
+}
+
+body.dark-mode h2 {
+  color: #FFF8E3;
+}
+
+body.light-mode h3 {
+  color: #1070bf;
+}
+
+body.dark-mode h3 {
+  color: #FFF8E3;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+/* Light switch container */
+.switch-container {
+  display: block;
+  margin: 0px auto;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+}
+
+.switch-container img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.switch-container img:hover {
+  transform: scale(1.05);
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 0.3s ease;
+}
+
+body.light-mode p {
+  color: #1070bf;
+}
+
+body.dark-mode p {
+  color: #FFF8E3;
+}
+
+.image-container-6 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Lamp containers */
+.lamp-container {
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/* Flowerpot lamp */
+.flowerpot {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.lamp-container:hover .flowerpot {
+  content: url('flowerpot-on.png');
+}
+
+/* Tuscan lamp */
+.Tuscanlamp {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.lamp-container:hover .Tuscanlamp {
+  content: url('Tuscan Lamp Up.png');
+} 
+
+/* Como Lamp */
+.Comolamp {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.lamp-container:hover .Comolamp {
+  content: url('Como Lamp - On.png');
+}
+
+/* Hanging Lamp */
+.Hanginglamp {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.lamp-container:hover .Hanginglamp {
+  content: url('hanging-lamp-on.png');
+}
