@@ -35,8 +35,9 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: url('Grid Backdrop.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 150px 150px; /* Controlled grid size */
+  background-repeat: repeat;
+  background-position: top left;
   opacity: 0.15;
   z-index: -1;
 }
@@ -52,7 +53,7 @@ h2 {
   font-family: 'HostGrotesk Bold', Arial, sans-serif;
   font-size: 1.6em;
   font-weight: bold;
-  margin-top; 20px;
+  margin-top: 20px;
 }
 
 .hover {
@@ -91,6 +92,9 @@ p {
   overflow: hidden;
 }
 
+.flickity-viewport {
+  height: 350px !important;
+}
 .carousel-cell img {
   width: 100%;
   height: 100%; 
