@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'HostGrotesk Regular';
+  src: url('HostGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HostGrotesk Bold';
+  src: url('HostGrotesk-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed from 'center' */
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  padding: 20px;
+  padding-bottom: 60px; 
+  background-color: #FFF8E3;
+  color: #1070bf;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Grid Backdrop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 80px;
+  font-size: 1.2em;
+  color: #1070bf;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel {
+  background: transparent;
+  width: 100%; 
+  max-width: 1400px; 
+  max-height: 1800px;
+}
+
+.carousel-cell {
+  width: 65; 
+  height: 350px; 
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: 200%;
+  object-fit: cover; 
+  border-radius: 5px;
+}
