@@ -15,13 +15,13 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Changed from 'center' */
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
   text-align: center;
   font-family: 'HostGrotesk Regular', Arial, sans-serif;
   padding: 20px;
-  padding-bottom: 60px; 
+  padding-bottom: 30px; 
   background-color: #FFF8E3;
   color: #1070bf;
   position: relative;
@@ -45,6 +45,14 @@ h1 {
   font-family: 'HostGrotesk Bold', Arial, sans-serif;
   font-size: 4em;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'HostGrotesk Bold', Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top; 20px;
 }
 
 .hover {
@@ -52,7 +60,8 @@ h1 {
 }
 
 p {
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 1.2em;
   color: #1070bf;
   text-align: center;
@@ -60,24 +69,36 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
+.divider {
+  width: 100%;
+  max-width: 1400px; 
+  border: none;
+  border-top: 1px solid #1070bf; 
+  margin: 0 auto; 
+}
 .carousel {
   background: transparent;
   width: 100%; 
-  max-width: 1400px; 
-  max-height: 1800px;
+  max-width: 1400px;
+  margin: 40px 0 60px 0;
 }
 
 .carousel-cell {
-  width: 65; 
+  width: 350px; 
   height: 350px; 
-  margin-right: 10px;
-  border-radius: 5px;
+  margin-right: 15px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .carousel-cell img {
   width: 100%;
-  height: 200%;
+  height: 100%; 
   object-fit: cover; 
-  border-radius: 5px;
+  border-radius: 8px;
+  display: block; 
+}
+
+.flickity-viewport {
+  height: 350px !important;
 }
