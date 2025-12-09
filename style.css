@@ -148,18 +148,18 @@
       z-index: 5;
     }
 
-    .trashcan-pen-holder {
+     .trashcan-pen-holder {
       bottom: 33%;
       right: 34%;
       width: 5.5%;
-      z-index: 6;
+      z-index: 15;
     }
 
     .smiski-figurine {
       bottom: 33%;
       right: 27%;
       width: 3%;
-      z-index: 5;
+      z-index: 6;
     }
 
     .plant-drawer {
@@ -176,7 +176,9 @@
       height: auto;
       display: block;
     }
+  
 
+   
     /* Modal */
     .modal-overlay {
       position: fixed;
