@@ -7,7 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="desk-container">
+  <!-- Modal Popup (shows once per session) -->
+  <div class="modal-overlay" id="welcomeModal">
+    <div class="modal-content">
+      <h2>Welcome to Rachel's Workspace</h2>
+      <p>Please feel free to hover over the elements to explore more!</p>
+      <button class="modal-button" onclick="closeModal()">Ok</button>
+    </div>
+  </div>
+
+  <div class="desk-container">
     <!-- Background layers -->
     <img src="wall.svg" alt="wallpaper" class="wall">
     <img src="table-desk.png" alt="table" class="table">
@@ -67,9 +76,22 @@
         <img src="matisse-poster.png" alt="matisse-poster">
       </a>
     </div>
-  </div>
 
+    <!-- Non-clickable items -->
+    <div class="plant-drawer">
+      <img src="plant-creeper.png" alt="Plant">
+    </div>
 
+    <div class="drawer-books">
+      <img src="book stack.png" alt="books">
+    </div>
+    <div>
+    <img src="rug"
+    </div>
+
+ <div class="rug">
+      <img src="smaller-rug.png" alt="rug">
+    </div>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
