@@ -12,12 +12,13 @@
   font-style: normal;
 }
 
-
 body {
   text-align: center;
-  font-family: ;
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
   padding: 20px;
+  padding-top: 120px; /* Added for nav bar spacing */
   background-color: #FFF8E3;
+  color: #FB68BC;
 }
 
 h1 {
@@ -25,15 +26,52 @@ h1 {
   font-size: 5em;
   font-weight: bold;
 }
-body {
-  font-family: 'HostGrotesk Regular', Arial, sans-serif;
-  color: #FB68BC;
-}
 
 p {
   margin-bottom: 60px;
   font-size: 1.2em;
   color: #FB68BC;
+}
+
+/* Navigation bar at top */
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  z-index: 100;
+  background-color: rgba(255, 248, 227, 0.95);
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation items */
+.nav-item {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.15);
+}
+
+.nav-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .grid-container {
@@ -62,7 +100,6 @@ p {
   display: block;
   vertical-align: top; 
 }
-
 
 .grid-container a:nth-child(1) img { 
   width: 700px; 
