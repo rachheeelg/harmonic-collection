@@ -1,0 +1,111 @@
+/* Base layers - background elements */
+  .wall {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .table {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      z-index: 2;
+    }
+
+    .chair {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30%;
+      z-index: 3;
+    }
+
+    /* Clickable items on desk/wall */
+    .desk-item {
+      position: absolute;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .desk-item:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      z-index: 100 !important;
+    }
+
+    .desk-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Position each item - adjust these! */
+    .printed-matter {
+      top: 10%;
+      left: 15%;
+      width: 18%;
+      z-index: 4;
+    }
+
+    .book-stack {
+      bottom: 25%;
+      left: 10%;
+      width: 15%;
+      z-index: 5;
+    }
+
+    .riso-print {
+      top: 15%;
+      left: 40%;
+      width: 20%;
+      z-index: 4;
+    }
+
+    .trashcan-pen-holder {
+      bottom: 20%;
+      right: 15%;
+      width: 12%;
+      z-index: 5;
+    }
+
+    .imac-font-book {
+      bottom: 28%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 25%;
+      z-index: 5;
+    }
+
+    .smiski-figurine {
+      bottom: 22%;
+      left: 25%;
+      width: 8%;
+      z-index: 6;
+    }
+
+    .lamp {
+      bottom: 30%;
+      right: 8%;
+      width: 15%;
+      z-index: 5;
+    }
+
+    .colour-swatches {
+      top: 20%;
+      right: 10%;
+      width: 15%;
+      z-index: 4;
+    }
+
+    .matisse-poster {
+      top: 12%;
+      left: 65%;
+      width: 18%;
+      z-index: 4;
+    }
