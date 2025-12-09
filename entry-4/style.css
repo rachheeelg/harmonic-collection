@@ -12,45 +12,46 @@
   font-style: normal;
 }
 
-.content-container {
-  max-width: 800px; /* Limits text width */
-  margin: 0 auto; /* Centers everything */
-  text-align: center;
-  padding: 40px;
-}
-
-
 body {
+  margin: 0;
+  padding: 40px;
   text-align: center;
-  font-family:'HostGrotesk Regular'
-  padding: 20px;
-  background-color: #f1f1f1;
+  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  background-color: #FFF8E3;
+  color: #1070bf;
+}
 
 h1 {
   font-family: 'HostGrotesk Bold', Arial, sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-family: 'HostGrotesk Bold', Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
-}
-
-body {
-  font-family: 'HostGrotesk Regular', Arial, sans-serif;
+  margin-top: 20px;
 }
 
 p {
-  font-family: 'HostGrotesk Regular', Arial, sans-serif;
-  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 1.2em;
-  color: #000000;
+  color: #1070bf;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover {
+  cursor: pointer;
 }
 
 img {
-  max-width: 60%;
+  max-width: 30%;
   height: auto;
   margin-bottom: 20px;
 }
