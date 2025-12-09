@@ -1,4 +1,15 @@
-/* Base layers - background elements */
+  <style>
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
   .wall {
       position: fixed;
       top: 0;
@@ -10,7 +21,7 @@
     }
     .table {
       position: absolute;
-      bottom: 0;
+      bottom: -40%;
       left: 50%;
       transform: translateX(-50%);
       width: 80%;
@@ -19,11 +30,11 @@
 
     .chair {
       position: absolute;
-      bottom: 5%;
+      bottom: -25%;
       left: 50%;
       transform: translateX(-50%);
-      width: 30%;
-      z-index: 3;
+      width: 32%;
+      z-index: 6;
     }
 
     /* Clickable items on desk/wall */
@@ -39,6 +50,10 @@
       z-index: 100 !important;
     }
 
+    .imac-font-book:hover {
+      transform: translateX(-50%) scale(1.05);
+    }
+
     .desk-item img {
       width: 100%;
       height: auto;
@@ -47,65 +62,67 @@
 
     /* Position each item - adjust these! */
     .printed-matter {
-      top: 10%;
-      left: 15%;
-      width: 18%;
-      z-index: 4;
+      top: 13%;
+      left: 19%;
+      width: 8%;
+      z-index: 2;
     }
 
     .book-stack {
-      bottom: 25%;
-      left: 10%;
+      bottom: 42%;
+      left: 23%;
       width: 15%;
       z-index: 5;
     }
 
     .riso-print {
-      top: 15%;
+      top: -2%;
+      left: 28%;
+      width: 16%;
+      z-index: 2;
+    }
+
+      .matisse-poster {
+      top: -10%;
       left: 40%;
-      width: 20%;
-      z-index: 4;
+      width: 30%;
+      z-index: 2;
     }
 
     .trashcan-pen-holder {
-      bottom: 20%;
-      right: 15%;
-      width: 12%;
+      bottom: 46%;
+      right: 35%;
+      width: 5%;
       z-index: 5;
     }
 
     .imac-font-book {
-      bottom: 28%;
-      left: 50%;
+      bottom: 46%;
+      left: 48.6%;
       transform: translateX(-50%);
-      width: 25%;
-      z-index: 5;
+      width: 28%;
+      z-index: 4;
     }
 
     .smiski-figurine {
-      bottom: 22%;
-      left: 25%;
-      width: 8%;
+      bottom: 46%;
+      left: 69%;
+      width: 3%;
       z-index: 6;
     }
 
     .lamp {
-      bottom: 30%;
-      right: 8%;
-      width: 15%;
+      bottom: 46%;
+      right: 29%;
+      width: 8%;
       z-index: 5;
     }
 
     .colour-swatches {
-      top: 20%;
-      right: 10%;
-      width: 15%;
-      z-index: 4;
+      top: -18%;
+      right: 15%;
+      width: 22%;
+      z-index: 2;
     }
 
-    .matisse-poster {
-      top: 12%;
-      left: 65%;
-      width: 18%;
-      z-index: 4;
-    }
+  
